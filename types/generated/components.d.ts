@@ -57,9 +57,7 @@ export interface SharedSimpleComponent extends Struct.ComponentSchema {
   };
   attributes: {
     description: Schema.Attribute.Text;
-    name: Schema.Attribute.String &
-      Schema.Attribute.Required &
-      Schema.Attribute.Unique;
+    name: Schema.Attribute.String & Schema.Attribute.Required;
     title: Schema.Attribute.String;
   };
 }
