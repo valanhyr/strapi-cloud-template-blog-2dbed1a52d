@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_shared_simple_components",
+  "info": {
+    "displayName": "Simple component"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

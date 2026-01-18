@@ -43,6 +43,16 @@
         }
       },
       "required": true
+    },
+    "section": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.simple-component",
+      "repeatable": true
     }
   }
 }
