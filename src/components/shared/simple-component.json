@@ -15,6 +15,11 @@
     },
     "description": {
       "type": "text"
+    },
+    "rules": {
+      "type": "component",
+      "component": "shared.component-rule",
+      "repeatable": true
     }
   },
   "config": {}

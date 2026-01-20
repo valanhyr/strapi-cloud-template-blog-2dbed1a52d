@@ -1,5 +1,16 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface SharedComponentRule extends Struct.ComponentSchema {
+  collectionName: 'components_shared_component_rules';
+  info: {
+    displayName: 'component-rule';
+    icon: 'connector';
+  };
+  attributes: {
+    text: Schema.Attribute.String;
+  };
+}
+
 export interface SharedMedia extends Struct.ComponentSchema {
   collectionName: 'components_shared_media';
   info: {
@@ -58,6 +69,7 @@ export interface SharedSimpleComponent extends Struct.ComponentSchema {
   attributes: {
     description: Schema.Attribute.Text;
     name: Schema.Attribute.String & Schema.Attribute.Required;
+    rules: Schema.Attribute.Component<'shared.component-rule', true>;
     title: Schema.Attribute.String;
   };
 }
@@ -77,6 +89,7 @@ export interface SharedSlider extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'shared.component-rule': SharedComponentRule;
       'shared.media': SharedMedia;
       'shared.quote': SharedQuote;
       'shared.rich-text': SharedRichText;

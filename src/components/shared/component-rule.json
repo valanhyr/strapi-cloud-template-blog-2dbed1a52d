@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_shared_component_rules",
+  "info": {
+    "displayName": "component-rule",
+    "icon": "connector"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
