@@ -44,6 +44,15 @@
       },
       "required": true
     },
+    "imageUrl": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    },
     "section": {
       "type": "component",
       "pluginOptions": {
