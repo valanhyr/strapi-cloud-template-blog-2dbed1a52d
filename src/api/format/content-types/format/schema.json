@@ -25,6 +25,16 @@
       "required": true,
       "unique": true
     },
+    "slug": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true,
+      "unique": true
+    },
     "title": {
       "type": "string",
       "pluginOptions": {
